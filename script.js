@@ -1,6 +1,6 @@
 // Data
 const data = [
-    { team: 'CLOUDA', kills: 47, damage: 34 },
+    { team: 'CLOUDA', kills: 57, damage: 34 },
     { team: 'CYCLONEF', kills: 38, damage: 29 },
     { team: 'EMBER', kills: 42, damage: 29 },
     { team: 'RIDERRRR', kills: 55, damage: 28 },
