@@ -1,0 +1,91 @@
+body {
+    font-family: 'Armstrong', sans-serif;
+    width: 1920px;
+    height: 1080px;
+    padding: 10px;
+    /*background: rgb(82, 80, 80);*/
+}
+
+#chart {
+    margin: 40px;
+}
+
+.bar {
+    transition: all 0.6s ease;
+}
+
+.bar:hover {
+    opacity: 0.7;
+}
+
+.x-axis text {
+    font-size: 15px;
+    fill: url(#gradient); /* Gradient color for axis text */
+}
+
+.x-axis line,
+.x-axis path {
+    fill: none;
+    shape-rendering: crispEdges;
+    stroke: #ccc;
+    stroke-width: 2px; /* Line size for X,Y axis */
+}
+.y-axis text {
+    font-size: 15px;
+    fill: url(#gradient); /* Gradient color for axis text */
+}
+
+.y-axis line,
+.y-axis path {
+    fill: none;
+    shape-rendering: crispEdges;
+    stroke: #ccc;
+    stroke-width: 2px; /* Line size for X,Y axis */
+}
+
+.text-inside-bar {
+    fill: white;
+    font-family: 'Steelfish', sans-serif; /* Custom font for bar values */
+    font-size: 25px;
+    font-weight: bold;
+    text-anchor: middle;
+   /*alignment-baseline: middle;*/
+}
+
+
+
+@keyframes flyIn {
+    from {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.image-fly-in {
+    animation: flyIn 1s ease-out;
+}
+
+.kills {
+    fill: url(#kills-gradient); /* Gradient color for kills bar */
+}
+
+.damage {
+    fill: url(#damage-gradient); /* Gradient color for damage bar */
+}
+
+.bar-title {
+    fill: rgb(255, 255, 255);
+    text-anchor: middle;
+    font-size: 35px;
+    font-weight: bold;
+}
+.team-logo {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    transform: translateY(-12%);
+}
